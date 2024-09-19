@@ -46,7 +46,9 @@ module tb_contador_8bits;
 
     // Monitor para observar el valor del contador
     initial begin
-        $monitor("Time: %0t | Reset: %b | Count: %h", $time, rst, count);
+        $dumpfile("tb_contador_8bits_result.vcd");
+        $dumpvars(0, tb_contador_8bits);
+        //$monitor("Time: %0t | Reset: %b | Count: %h", $time, rst, count);
     end
 
 endmodule
