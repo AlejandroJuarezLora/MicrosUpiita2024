@@ -39,8 +39,8 @@ sprint:
     pop     ecx
     pop     edx
     ret
- 
- ;------------------------------------------
+
+;------------------------------------------
 ; void sprintLF(String message)
 ; String printing with line feed function
 sprintLF:
@@ -58,6 +58,7 @@ sprintLF:
     pop     eax         ; remove our linefeed character from the stack
     pop     eax         ; restore the original value of eax before our function was called
     ret                 ; return to our program
+ 
  
  
 ;------------------------------------------

@@ -1,6 +1,6 @@
  
 SECTION .data
-msg     db      'Hello World!', 0Ah
+msg     db      'Hello World!', 0Ah  ;ASCII
  
 SECTION .text
 global  _start
